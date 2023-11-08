@@ -1,0 +1,232 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-top: 15vh;
+  text-align: center;
+}
+.search-container > input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.search__btn {
+  width: 300px;
+  height: 40px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #4a90cf;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  margin: 36px 0 0 60px;
+  text-align: left;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 72px;
+}
+
+.user-details__main {
+  display: flex;
+  flex-direction: row;
+}
+
+.link-text {
+  margin-top: 18px;
+}
+
+.link-text > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.repo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px 0 30px 0;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+.loader > h4 {
+  margin-top: 24px;
+}
+h4 {
+  font-size: 32px;
+  color: #4a90cf;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 24px;
+}
+
+.pagination__pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-nos > button {
+  color: #4a90cf;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+}
+
+.page-nos > button:active {
+  background-color: #4a90cf;
+  color: white;
+}
+
+#arrow-btn {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.old-new {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+  gap: 12rem;
+}
+.old-new > button {
+  background-color: white;
+  border: 1px solid gainsboro;
+  color: gray;
+  padding: 4px;
+  border-radius: 4px;
+  width: 84px;
+  cursor: pointer;
+}
+.card-component {
+  border: 1px solid black;
+  padding: 8px;
+  width: 45%;
+  height: 30vh;
+  margin: 12px 24px 0 0;
+  position: relative;
+}
+
+.repo-languages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 4px;
+  position: absolute;
+  bottom: 18px;
+}
+.repo-lang {
+  background-color: #4a90cf;
+  padding: 4px;
+  border-radius: 4px;
+  justify-content: start;
+}
+
+.repo-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a90cf;
+  position: absolute;
+  top: -14px;
+}
+
+.repo-desc {
+  position: absolute;
+  top: 18%;
+}
+@media screen and (max-width: 768px) {
+  * {
+    max-width: 100vw;
+  }
+  .search-container {
+    margin-top: 0;
+    justify-content: center;
+  }
+  .search-container > input {
+    width: 65vw;
+  }
+  .search-container > h4 {
+    font-size: 24px;
+  }
+  .search__btn {
+    width: 180px;
+  }
+  .card-component {
+    width: 100vw;
+    height: 30vh;
+    margin: 0 0 22px 0;
+  }
+
+  .user-details {
+    margin: 36px 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-details__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .old-new {
+    gap: 2rem;
+  }
+  .avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  .details {
+    margin-left: 0;
+    text-align: center;
+  }
+  .details > a {
+    margin-left: 0;
+    text-align: center;
+  }
+  .link-text {
+    text-align: center;
+  }
+  .loader {
+    text-align: center;
+  }
+}
